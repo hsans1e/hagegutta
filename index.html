@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hagegutta</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-bg {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url('https://images.unsplash.com/photo-1590001155093-a3c66ab0c3ff');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- Navbar -->
+  <nav class="fixed w-full bg-black/70 backdrop-blur p-4 flex justify-between z-50">
+    <h1 class="font-bold text-xl">🌿 Hagegutta</h1>
+    <div class="space-x-6">
+      <a href="#tjenester" class="hover:text-green-400">Tjenester</a>
+      <a href="#om" class="hover:text-green-400">Om oss</a>
+      <a href="#kontakt" class="hover:text-green-400">Kontakt</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-bg h-screen flex flex-col justify-center items-center text-center px-6">
+    <h1 class="text-6xl font-bold mb-4 animate-pulse">Hagegutta</h1>
+    <p class="text-xl mb-2">Åmli sentrum</p>
+    <p class="text-2xl font-semibold mb-6 max-w-2xl">Vi tar jobben du ikke gidder — raskt, rimelig og skikkelig gjort.</p>
+    <a href="tel:95557746" class="bg-green-500 px-8 py-4 rounded-2xl text-xl hover:bg-green-600 transition">📞 Ring oss: 95 55 77 46</a>
+  </section>
+
+  <!-- Tjenester -->
+  <section id="tjenester" class="py-20 bg-white text-black">
+    <h2 class="text-4xl font-bold text-center mb-12">Hva vi gjør</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 px-10">
+
+      <div class="rounded-2xl overflow-hidden shadow-xl hover:scale-105 transition">
+        <img src="https://images.unsplash.com/photo-1599685315640-0c2a68b4d6b1" class="h-40 w-full object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-bold">🌱 Hagearbeid</h3>
+          <p>Klipping, rydding og stell</p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl overflow-hidden shadow-xl hover:scale-105 transition">
+        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952" class="h-40 w-full object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-bold">🧹 Feiing</h3>
+          <p>Innkjørsler og uteområder</p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl overflow-hidden shadow-xl hover:scale-105 transition">
+        <img src="https://images.unsplash.com/photo-1581579185169-3c64b0b2f3c5" class="h-40 w-full object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-bold">🪟 Vindusvask</h3>
+          <p>Blanke vinduer</p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl overflow-hidden shadow-xl hover:scale-105 transition">
+        <img src="https://images.unsplash.com/photo-1608889175123-8ee362201f3c" class="h-40 w-full object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-bold">❄️ Snømåking</h3>
+          <p>Snø og is fjernes</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Om oss -->
+  <section id="om" class="py-20 bg-gradient-to-r from-green-700 to-green-500 text-center">
+    <h2 class="text-4xl font-bold mb-10">Hvorfor velge oss?</h2>
+    <div class="grid md:grid-cols-2 gap-8 px-10">
+      <div class="bg-black/30 p-6 rounded-2xl">💰 250 kr/timen</div>
+      <div class="bg-black/30 p-6 rounded-2xl">📱 Vipps betaling</div>
+      <div class="bg-black/30 p-6 rounded-2xl">👷 Tre motiverte gutter</div>
+      <div class="bg-black/30 p-6 rounded-2xl">📍 Åmli sentrum</div>
+      <div class="bg-black/30 p-6 rounded-2xl col-span-full">🔧 Tar nesten alle oppdrag</div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="kontakt" class="py-20 bg-black text-center">
+    <h2 class="text-4xl font-bold mb-6">Ta kontakt</h2>
+    <p class="mb-6 text-lg">Klar for jobb – ring nå!</p>
+    <a href="tel:95557746" class="bg-green-500 px-10 py-4 rounded-2xl text-2xl hover:bg-green-600 transition">📞 95 55 77 46</a>
+
+    <div class="mt-10 text-sm opacity-80">
+      <p>Åmli sentrum</p>
+      <p>250 kr/timen</p>
+      <p>Vipps</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 bg-gray-800">
+    <p>© 2026 Hagegutta — Åmli</p>
+  </footer>
+
+</body>
+</html>
